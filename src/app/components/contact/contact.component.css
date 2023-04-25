@@ -1,7 +1,10 @@
+.main {
+    background: #080808;
+}
+
 h3 {
     display: flex;
     justify-content: center;
-    background: #080808;
     color: white;
     font-size: 40px;
     margin-top: 40px;
@@ -16,7 +19,6 @@ h3 {
     height: 100%;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
-    background: #080808;
     color: white;
     padding-bottom: 50px;
 }
@@ -29,7 +31,7 @@ h3 {
     gap: 20px;
 }
 
-.email, .number, .message {
+.email, .name, .message {
     display: flex;
     flex-direction: column;
 }
@@ -64,4 +66,14 @@ input:focus, textarea:focus {
 .btn:hover {
     cursor: pointer;
     background: rgb(18, 192, 18);
+}
+
+@media (width < 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .container-form {
+        width: 85%;
+    }
 }

@@ -1,4 +1,4 @@
-.container {
+.main {
     height: 100%;
     width: 100%;
     background: #080808;
@@ -6,6 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 100px;
+    padding-top: 150px;
 }
 
 .text {
@@ -23,7 +24,7 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.btn {
+.boton {
     padding: 15px 70px;
     font-size: 14px;
     color: white;
@@ -33,7 +34,7 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
-.btn:hover {
+.boton:hover {
     cursor: pointer;
     background: rgb(18, 192, 18);
 }
@@ -47,4 +48,78 @@
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media (width < 1000px) {
+    .main {
+        gap: 20px;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .image img {
+        width: 300px;
+    }
+}
+
+@media (width < 800px) {
+    .main {
+        gap: 20px;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .image img {
+        width: 300px;
+    }
+}
+
+@media (width < 615px) {
+
+    .image {
+        display: none;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media (width < 510px) {
+
+    .main {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    p {
+        animation-duration: 1s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    .boton {
+        font-size: 10px;
+        padding: 10px 50px;
+    }
 }

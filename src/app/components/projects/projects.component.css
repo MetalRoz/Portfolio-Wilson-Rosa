@@ -18,7 +18,7 @@ p {
     color: #9C9C9C;
 }
 
-.container {
+.main {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -55,4 +55,11 @@ p {
 .boton:hover {
     cursor: pointer;
     background: rgb(18, 192, 18);
+}
+
+@media (width < 500px ) {
+    .project {
+        width: 80%;
+    }
+
 }
