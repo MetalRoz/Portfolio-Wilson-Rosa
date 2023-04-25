@@ -1,0 +1,22 @@
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background: #080808;
+    color: white;
+    font-size: 40px;
+    padding-top: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+.icons {
+    background: #080808;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-size: 100px;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 200px;
+}

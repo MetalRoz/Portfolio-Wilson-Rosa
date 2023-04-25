@@ -1,0 +1,50 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background: #080808;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+}
+
+.text {
+    width: 50%;
+}
+
+.text h3 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+
+.text p {
+    color: dimgray;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.btn {
+    padding: 15px 70px;
+    font-size: 14px;
+    color: white;
+    background: rgb(34, 139, 34);
+    border: none;
+    box-shadow: 1px 1px 8px 3px rgba(34, 139, 34, 0.7);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgb(18, 192, 18);
+}
+
+.image {
+    width: 31%;
+}
+
+.image img {
+    width: 95%;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
