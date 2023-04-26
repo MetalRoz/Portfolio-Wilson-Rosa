@@ -1,21 +1,24 @@
 <div class="main">
     <h3>Contáctame</h3>
     <div class="container">
-        <form class="container-form" id="contact" netlify>
-            <div class="email">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="" required placeholder="Por favor ingresa tu correo">
-            </div>
+        <form (submit)="sendEmail(formContact)"
+        #formContact="ngForm"
+        name="formulario"
+        class="container-form" id="contact" >
             <div class="name">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="" placeholder="Por favor ingresa tu nombre">
+                <input type="text" [(ngModel)]="nombre" name="nombre" id="name" placeholder="Por favor ingresa tu nombre">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" [(ngModel)]="email" id="email" required placeholder="Por favor ingresa tu correo">
             </div>
             <div class="message">
                 <label for="message">Mensaje</label>
-                <textarea name="message" id="" cols="60" rows="10"
+                <textarea [(ngModel)]="mensaje" name="message" id="message" cols="60" rows="10"
                     placeholder="Por favor ingresa tu mensaje"></textarea>
             </div>
-            <button class="btn" type="submit">Enviar</button>
+            <input class="btn" type="submit" value="Enviar">
         </form>
     </div>
 </div>
