@@ -64,4 +64,9 @@ p {
         width: 80%;
     }
 
+    .btn-nobootstrap {
+        display: flex;
+        justify-content: center;
+    }
+
 }
