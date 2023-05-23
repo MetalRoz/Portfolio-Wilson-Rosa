@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './components/success/success.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { VentasComponent } from './components/ventas/ventas.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     ContactComponent,
     HeaderComponent,
     SuccessComponent,
-    HomePageComponent
+    HomePageComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,
