@@ -1,0 +1,39 @@
+.footer {
+    background: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 80px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.github:hover {
+    background: #464646;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    background: #0257f5;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    background: #3f8e00;
+    cursor: pointer;
+}
+
+.fa-brands {
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}

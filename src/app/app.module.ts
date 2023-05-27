@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './components/success/success.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { VentasComponent } from './components/ventas/ventas.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { VentasComponent } from './components/ventas/ventas.component';
     HeaderComponent,
     SuccessComponent,
     HomePageComponent,
-    VentasComponent
+    VentasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
